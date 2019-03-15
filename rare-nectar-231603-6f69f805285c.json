@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rare-nectar-231603",
+  "private_key_id": "6f69f805285cf849f2c26111c54909703aff1aa7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRqlw2QQMRLz/m\ntJI/fxsXR9EDzFENxSnfJT9zYzHpLQOJ76C9S+/rCNsC3wkMkGyOU4WZVv5+Cz6V\nJh+L1HzwkoiFMM3sGPT6OpwKe7dDJha7emfhIyiFBffxZYx1KCDmCudzo/uNHaFX\n6S958HcTU4sKF3Ob6ABb2I7rwhG3VLT9vrRc5SmRzM9h725Fo1B/2m18d9Vm1aZ6\nzr3JwX7jJoJeEwmG9XZ6ltG7D4DE0fNvxDKhrAMKcM1ODy8GfFBkV80vQgjFMpRV\n9ZdIUHX4MjjGaqs7C5TL97X+C8I/8dCDjmqfeT+tiMZ2yHisQ+wBXVKCixpA3rR2\nWWQOThoPAgMBAAECggEALgyWuCvLOqkABfG+9Uc7cf+J/qWPX9DgA2yw5Ozyd141\nmsQQr8LP7PVC9Px7hlDqJtBdVXJv7ssVcbiv0QxYbJYiee5gK+zHUXYx83N8qrjg\n4UhfLGmGasEG1fQRx2GK6DuY3iM0CqhpWV+T19pirNH6hbrk32czPPjxWwKC1ZrV\nLpRRnYLMupOrCsQa0BI6dciSQdfA52E5XC1FHoPgox8TYBbHQGQa4b8+GiErHsFr\nuYhmO+iMw5oyvWw3teYK05hivqlUdA92aviTWg+1XyeRWuE9trCkrpcsd404n4oT\nuW5vz0YDHCgtB3XYzWos7ecVhuNh4115r45sr2hQ0QKBgQD3st7QWRaGe79KzJfK\nF6Hvv22Z5hai6Bxg5KPtNx7SGCpHOBQM6VvaIerRbbBLefKqFVFImBjvU0wIv3JV\nd5Ya7wSpF/CEzgHcf9Mgx5bPorHVdraenDoR2GvaR6sC8o9Acg4xdSK2RbR5EfYt\nVuNkwr2zyZVlXNnGH74U5xJSQwKBgQDYsS8RHwLZoGodR350wuJsGTC/VyvB2+pz\n1rddphMgxSgm0ShwIJ3/snMFJqYT5Ks9EIgMEqGKzWTAuOOLKLW/wyqxAJZuWYIh\nVJrvHFOk3DmzVjO8hGIdxGsLJoBUphXHiAS8iC0E8EEgZ13wW4yF0gbkFdFgHPqP\ns+fjTo56RQKBgQCdj5JcRc8mTKEqG2qSiuXfc41sUAgmKC+lEsuToXRhgC2kj+9x\nJx/eaaTNA1EZMcFCn7zMyLNTyVCcX+uCokdBark0Np4wXDqi4EyUlWFBQuSMPK99\nxTLLFzfD6cLGZTTqcaLFoxUpjL14JgzKWnLbLWUucBQwHhgJBzgKY9IrsQKBgDAf\nGQ66Tk26HBaoe+K+LL5I0dSMLUF97xEOi+YWLYVHg2UracmM1Mml/XkVXihozcZf\n13am5I0Ik+lgpdePkN0nIGHyeXXEFuwD9+xF5CVmasHy0MZ6t7dYmVT+ld02jPuk\nrziXHThNiokBq5DnI8vMGo+ocLjhdptXHpYSKf3pAoGBAIJ/aTCh1GKrNOq+yBEk\n4gPitv0smo3H0viiNtE5JW77VidCFs4rrb88mb7n9BI06U3s5CmxCGaaJzjMHgUu\ncTCbbU+rmzICYSgxBry1CXdurkfsBxg0jID2ONJgPZxAxtF25nSeJx6VSTh2iXrI\niefJx2LEZfqQCbgdza6CAY3c\n-----END PRIVATE KEY-----\n",
+  "client_email": "mini-wp@rare-nectar-231603.iam.gserviceaccount.com",
+  "client_id": "104223175260692358270",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mini-wp%40rare-nectar-231603.iam.gserviceaccount.com"
+}
