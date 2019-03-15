@@ -19,6 +19,7 @@
   "homepage": "https://github.com/pdfbox/server#readme",
   "dependencies": {
     "@google-cloud/storage": "^2.4.2",
+    "@google-cloud/vision": "^0.25.0",
     "axios": "^0.18.0",
     "bcrypt": "^3.0.4",
     "cloudmersive-ocr-api-client": "^1.1.4",
