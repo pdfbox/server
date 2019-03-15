@@ -1,5 +1,6 @@
 const User = require('../models/user')
 const bcrypt = require('../helpers/bcrypt')
+require('dotenv').config()
 const jwt = require('../helpers/jwt')
 
 class UserController {
@@ -22,19 +23,24 @@ class UserController {
         .then(result => {
             if(result && bcrypt.compare(req.body.password, result.password)) {
                 const payload = {
-                    email: result.email
+                    id  : result._id
                 }
                 const access_token = jwt.sign(payload)
                 res.status(200).json({
+                    id : result._id,
                     access_token
                 })
             } else {
+                console.log('masuk sini');
+                
                 res.status(400).json({
                     message: 'Wrong email/password'
                 })
             }
         })
         .catch(err => {
+            console.log(err,"===");
+            
             res.status(500).json(err)
         })
     }
