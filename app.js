@@ -11,5 +11,5 @@ app.use(cors())
 app.use(express.urlencoded({ extended:false }))
 app.use(express.json())
 app.use('/', require('./routes/api'))
-
+app.use('/google-upload', require('./routes/google-upload'))
 app.listen(port)
