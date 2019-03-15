@@ -5,7 +5,7 @@ const port = 3000
 const mongoose = require('mongoose')
 const cors = require('cors')
 
-mongoose.connect('mongodb://localhost/PdfBox', { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://pdfboxadmin:pdfbox123456@pdfbox-i1ysw.mongodb.net/test?retryWrites=true', { useNewUrlParser: true })
 
 app.use(cors())
 app.use(express.urlencoded({ extended:false }))
