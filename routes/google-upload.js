@@ -8,6 +8,8 @@ const translateController = require('../controllers/translate')
 
 const authenticate = require('../middlewares/authenticate')
 
+const authorize = require('../middlewares/authorize')
+
 router.use(authenticate)
 
 router.post('/translate',
@@ -52,28 +54,25 @@ router
           .status(500)
           .json(err.message)
       })
+  })
+  .delete('/:id', authorize, (req, res, next) => {
+    Media
+      .deleteOne({
+        _id: req.params.id
+      })
+      .then(() => {
+        images.deleteFileInGCS(req.body.fileName)
+        res
+          .status(200)
+          .json({
+            message: 'file deleted'
+          })
+      })
+      .catch(err => {
+        res
+          .status(500)
+          .json(err.message)
+      })
   });
-
-
-
-
-  // router
-  // .post('/', images.multer.single('file'),
-  //   images.sendUploadToGCS, 
-  //   (req, res) => {
-  //     (new Media({
-  //       url: req.file.cloudStoragePublicUrl
-  //     })).save((err, data) => {
-  //       if (err) {
-  //         res
-  //           .status(500)
-  //           .json(err.message)
-  //       } else {
-  //         res
-  //           .status(201)
-  //           .json(data)
-  //       }
-  //     });
-  //   })
 
 module.exports = router;

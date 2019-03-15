@@ -56,8 +56,20 @@ const Multer = require('multer'),
     // dest: '../images'
   })
 
+const deleteFileInGCS = async function (filename) {
+  try {
+    await storage
+      .bucket(CLOUD_BUCKET)
+      .file(filename)
+      .delete()
+  } catch (e) {
+    console.log(e.message)
+  }
+};
+
 module.exports = {
   getPublicUrl,
   sendUploadToGCS,
-  multer
+  multer,
+  deleteFileInGCS
 };
