@@ -12,28 +12,31 @@ const authorize = require('../middlewares/authorize')
 
 router.use(authenticate)
 
-router.post('/translate',
-translateController.translate )
+router
+  .post('/scan',
+    translateController.translate)
+  .post('/translate',
+    translateController.translateX)
 
 router
   .post('/', images.multer.single('file'),
-    images.sendUploadToGCS, 
+    images.sendUploadToGCS,
     (req, res) => {
       console.log(req.user);
-      
+
       (new Media({
-        author : req.user,
+        author: req.user,
         url: req.file.cloudStoragePublicUrl
       })).save((err, data) => {
         if (err) {
           console.log(err, "======");
-          
+
           res
             .status(500)
             .json(err.message)
         } else {
           console.log(data, "===dTA");
-          
+
           res
             .status(201)
             .json(data)
@@ -45,7 +48,7 @@ router
       .find()
       .then((props) => {
         console.log(props, "===props====");
-        
+
         res
           .json(props)
       })
